@@ -47,4 +47,3 @@ fi
     echo "XMN=$XMN"
     echo "GC=$GC"
 }
-~    
