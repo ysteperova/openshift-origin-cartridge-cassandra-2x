@@ -172,8 +172,8 @@ JVM_OPTS="$JVM_OPTS -XX:ThreadPriorityPolicy=42"
 # heap in memory on startup to prevent any of it from being swapped
 # out.
 
-if [ -x /opt/repo/versions/8.14/bin/variablesparser.sh ]; then
-    . /opt/repo/versions/8.14/bin/variablesparser.sh
+if [ -x /opt/repo/versions/2.0.8/bin/variablesparser.sh ]; then
+    . /opt/repo/versions/2.0.8/bin/variablesparser.sh
 fi
 
 [ -z "$XMS" ] && { XMS=32M; }
