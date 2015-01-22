@@ -206,7 +206,7 @@ fi
 echo "xss = $JVM_OPTS"
 
 # GC tuning options
-JVM_OPTS="$JVM_OPTS -XX:+UseParNewGC" 
+JVM_OPTS="$JVM_OPTS ${GC}" 
 JVM_OPTS="$JVM_OPTS -XX:+UseConcMarkSweepGC" 
 JVM_OPTS="$JVM_OPTS -XX:+CMSParallelRemarkEnabled" 
 JVM_OPTS="$JVM_OPTS -XX:SurvivorRatio=8" 
