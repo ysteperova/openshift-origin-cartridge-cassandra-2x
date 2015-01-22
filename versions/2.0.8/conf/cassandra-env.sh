@@ -180,6 +180,7 @@ fi
 [ -z "$XMN" ] && { XMN=30M; }
 memory_total=`free -m | grep Mem | awk '{print $2}'`;
 [ -z "$XMX" ] && { let XMX=memory_total-35; XMX="${XMX}M"; }
+[ -z "$GC" ] && { GC="-XX:+UseParNewGC"; }
 
 JVM_OPTS="$JVM_OPTS -Xms${XMS}"
 JVM_OPTS="$JVM_OPTS -Xmx${XMX}"
